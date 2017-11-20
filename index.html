@@ -1,0 +1,46 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>TWEET</title>
+		<!-- Enlazando tipografia de fuente familiar -->
+		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'>
+		<!-- Enlazando archivo css-->
+		<link rel="stylesheet"  href="css/main.css">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+	</head>
+	<body>
+		<!--titulo-->
+		<header>
+			<h1>TWITTER</h1>
+		</header>
+		<!-- contiene a la  caja izquierda y de la caja derecha(tweet)-->
+    <section>
+			<!-- Caja contenedora de textos-->
+			<div id="cuadro-izquierdo">
+				<h2>Reto de Codigo</h2>
+				<p>Hola, soy <strong>Vanessa Mendoza Inoñan</strong> alumna de laboratoria y<br><br>soy front-end developer jr.</p>
+				<h2 id="codigo"> <hr><br>CODIGO</h2>
+	    </div>
+			<!-- Caja donde se crean los tweet contando los caracteres y  mostrando la hora -->
+			<div id="cajatweet">
+				<h2>Escribe tu Tweet</h2>
+				<!-- Creando caja de formulario con un textarea para insertar un contenido a tweetear y un contador de los caracteres de dicho contenido-->
+				<form id="tweet" name="tweet">
+					<textarea  name="mensaje" id="text-tweet"  placeholder="Publicar un nuevo Tweet..."></textarea>
+					<input id="counter" type="text" name="remLen" size="1" maxlength="2" value="140">
+				</form>
+				<!-- boton submit para tweetear el contenido impreso en el textarea y mostrarlo en la parte inferior con la hora respectiva-->
+				<div>
+					<input id="boton" type="submit" value="tweet" class="disabledColor">
+				</div>
+			</div>
+    </section>
+		<!-- Contiene los parrafos que se van creando(interaccion desde js) cuando hacemos click en el boton tweet-->
+		<section>
+			<div id="resultado"></div>
+		</section>
+		<!-- Enlazando js-->
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
